@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;500&display=swap');
+
+body {
+    margin: 0;  
+    overflow-x: hidden;
+}
+
+.menu-bg{
+    width: 100vw;
+    height: 80px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 53px;
+}
+
+.menu{
+    max-width: 960px;
+    height: 20px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.menu a{
+    color: white;
+}
+
+.menu-logo{
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-left: -180px; /*corrigir*/
+    
+    
+}
+
+.menu-logo a{
+    text-decoration: none; /*remove o sublinhado do link*/
+}
+
+.menu-logo a:hover{
+    color: #9542ee; /*muda a cor ao passar o mouse em cima do nome*/
+    transition: 0.4s;
+}
+.menu-nav{
+    font-weight: 100;
+}
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap; /*limita a div para nao ultrapassar o tamanho do container*/
+    gap: 40px; /*espaçamento entre os itens do menu*/
+    list-style: none; /*tira a decoração da lista (bolinhas)*/
+   
+}
+.menu-nav a{
+    font-weight: 100;
+    font-size: 1.15rem;
+    display: block;
+    text-decoration: none; /*tira o sublinhado que sugere ser um link*/
+}
+
+.menu-nav a:hover{
+    color: #9542ee;
+    transition: 0.4s;
+}
+
+/*Primeira sessão*/
+
+.container-first{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: radial-gradient(circle at 12.5% 12.5%, #302d2f 0, #2c252a 12.5%, #271c25 25%, #201321 37.5%, #19051e 50%, #0f001c 62.5%, #00001a 75%, #000019 87.5%, #000018 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    width: 99vw;
+    height: 62vh;
+    padding: 25px;
+    line-height: 40px;
+    box-shadow: 2px 5px 0 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 20px 20px;
+}
+
+.introducao-text{
+    margin-left: 24px;
+    justify-content: space-between;
+}
+
+.introducao-text h1, p{
+    color: #FBF1EC;
+    font-weight: 400;
+}
+
+.introducao-text h1 {
+    font-size: 30px;
+    line-height: 24px;
+}
+.introducao-text p {
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.introducao-text span{
+    background-color: #9542ee;
+    padding: 5px;
+    text-shadow: 1px 1px rgba(170, 170, 170, 0.656);
+}
+
+.button-left{
+    margin-top: 24px;
+    font-family: 'Roboto';
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 20px 4px rgba(216, 216, 216, 0.183);
+}
+
+.button-right{
+    margin-top: 24px;
+    font-family: 'Roboto';
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border: none;
+    margin-left: 10px;
+    box-shadow: 2px 2px 20px 4px rgba(216, 216, 216, 0.183);
+}
+
+.introducao-text button:hover{
+    color: #77ffc0;
+    transition: 0.5s;
+}
+
+.prototipo-intruducao img{
+    margin-left: 250px;
+    width: 18vw;
+}
+
+.section-two{
+    display: flex;
+    width: 100vw;
+    height: 65vh;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container-two{
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: #1a061e19;
+    border: 3px solid #FBF1EC;
+    box-shadow: -10px 0px 34px -29px rgba(0, 0, 0, 0.1);
+}
+
+.cards-two{
+    background-color: #D9D9D9;
+    width: 15vw;
+    height: 45vh;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    border: 8px solid #FBF1EC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+}
+
+.card4, .card3, .card2, .card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cards-two h2{
+    font-family: 'Roboto';
+    margin-left: 24px;
+    color: #3a1b5a;
+}
+
+.cards-two:hover{
+    background-color: #bfa6d8; 
+    transition: 0.4s;
+}
+
+.title-cards-two{
+    background-color: #bfa6d8;
+    height: 85px;
+    border-radius: 1px
+
+}
+.title-cards-two span{
+    background-color: #a882cd5b;
+    border-radius: 3px;
+}
+
+.paragrafo-cards p{
+    font-family: 'Roboto';
+    color: rgb(87, 85, 85);
+    margin-left: 24px;
+    margin-top: 10px;
+}
+
+.section-three{
+    width: 100vw;
+    height: 70vh;
+}
+
+.container-three{
+    background-color: #201b2c;
+    border-radius: 25px;
+    width: 99vw;
+    height: 70vh;
+    display: flex;
+}
+
+.left-side{
+    width: 50%;
+    height: 60vh;
+}
+
+.left-side img{
+    border-radius: 25px 25px 25px;
+}
+.right-side{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.right-side h1{
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 600;
+    color: #EEEEEE;
+}
+
+.right-side p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.right-side button{
+    width: 25vw;
+    height: 8vh;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: normal;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #77ffc0;
+    color: #6e0fcd;
+}
+
+.right-side button:hover{
+    background-color: #47b849;
+    color: #FFFFFF;
+    transition: 0.4s;
+    cursor: pointer;
+}
