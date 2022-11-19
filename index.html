@@ -10,22 +10,35 @@
 <body>
 <section class="section-one">
         <div class="container-first">
-            <header class="menu-bg">
-                <div class="menu">
-                    <div class="menu-logo">
-                        <a href="">Persona Auto Center</a>
-                    </div>
-                    <nav class="menu-nav">
-                        <ul>
-                            <li><a href="#">Sobre Nós</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Contato</a></li>
-                            <li><a href="#">Agendamentos</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <header id="header">
+                <a id="logo" href="#">Persona Auto Center</a>
+                <nav id="nav">
+                    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+        
+                        <span id="hamburger"></span>
+                    </button>
+                    <ul id="menu">
+                        <li><a href="/">Sobre</a></li>
+                        <li><a href="/">Produtos</a></li>
+                        <li><a href="/">Porfolio</a></li>
+                        <li><a href="/">Sobre</a></li>
+                        <a href="/">
+                            <button id="btn-menu-left" class="btn-menu">Agendar Horário</button>
+                        </a>
+                        <a href="/">
+                            <button id="btn-menu-right" class="btn-menu">Área do Cliente</button>
+                        </a>
+                    </ul>
+                </nav>
             </header>
+
+            <div class="main-introducao">
             <div class="introducao-text">
+                <div id="title-introducao">
+                    <img id="img-title"src="imagens/car-title.png" alt="">
+                    <p>Seu carro em boas mãos</p>
+                </div>
+                <div>
                 <h1>Pare de procurar oficinas.</h1>
                 <h1><span>Resolvemos</span> o problema do seu carro.</h1>
                 <h1>Sem enrolação.</h1>
@@ -33,15 +46,13 @@
                 <button class="button-left">Quero agendar um orçamento<br>(sem compromisso) ➔
                 </button>
                 <button class="button-right">
-                    SAIBA MAIS sobre<br>nossa
+                    Saiba mais sobre<br>nossa
                     empresa ➔
                 </button>
+                
+                </div>
             </div>
-            <div class="introducao-img">
-                <figure class="prototipo-intruducao">
-                    <img src="imagens/Frame 3.svg" alt="">
-                </figure>
-            </div>
+         </div>
         </div>
 </section>
 
@@ -112,6 +123,8 @@
             <button>Conferir pacotes de revisão ➔</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </section>
 </body>
 </html>
